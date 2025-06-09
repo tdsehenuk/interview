@@ -2,7 +2,19 @@
 #include <string.h>
 
 void remove_spaces(char *str) {
-    // your code here
+    
+    int i;
+    int j = 0;
+    int length = strlen(str);
+
+    for(i = 0; i < length; i++) {
+        if(str[i] != ' ') {
+            str[j++] = str[i];
+        }
+    }
+    
+    str[j] = '\0';
+
 }
 
 int main() {
